@@ -1,0 +1,26 @@
+<?php use Phalcon\Tag; ?>
+
+<h2>Login using this form</h2>
+
+<?php 
+echo Tag::form("login/login"); 
+?>
+
+ <p>
+    <label for="name">Name</label>
+    <?php echo Tag::textField("name") ?>
+ </p>
+
+<p>
+    <label for="password">password</label>
+    <?php echo Tag::textField("password") ?>
+ </p>
+
+
+
+ <p>
+    <?php echo Tag::submitButton("Login") ?>
+ </p>
+
+</form>
+

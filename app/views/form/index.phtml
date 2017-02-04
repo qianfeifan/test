@@ -1,0 +1,21 @@
+<html>
+<title>aaa</title>
+<body>
+ 
+<?php echo $this->tag->form("form/test");?>
+ 
+<?php echo $form->render("name") ?>
+<br>
+<?php echo $form->render("telphone", array("maxlength"=>20, "placeholder"=>"you telphone"));?>
+<br>
+<?php echo $form->render("passwd") ?>
+ 
+ 
+ 
+ 
+<br>
+<?php echo $this->tag->submitButton("login");?>
+</form>
+ 
+</body>
+</html>
